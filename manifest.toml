@@ -1,0 +1,6 @@
+# Capability manifest for `rustline plugin approve ticker`. Embedded into the
+# built .wasm as the `rustline-manifest` custom section (see src/lib.rs), so
+# it survives distribution -- `plugin install` only downloads the .wasm.
+name = "ticker"
+version = "0.1.0"
+requested_urls = ["https://api.coingecko.com/api/v3/simple/price*"]
